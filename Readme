@@ -1,0 +1,12 @@
+This is an exploratory project that utilizes categorical, numeric, date, and textual data to create machine learning
+alogorithms that predict whether or not a potential loan applicant is likely to pay their loan back in time.
+
+NaNs were dealt with appropriately. Dates were converted to categorical data [decades and quarters]. Text was count vectorized. 
+Data points with two or more outliers were removed. Columns missing 15% or more values were dropped. Logistic Regression 
+with grid search and Gradient Boosting with grid search were performed. Validation was done using K-means with 5
+cv folds. Log loss, accuracy score, and f1 score were returned.
+
+Notes:
+Uncomment lines 369-372 to see results. Can switch grid_search parameter to False to decrease runtime
+Change variable in line 16 to location of data frame on local computer/where you have the data file saved
+Must have libraries: pandas, numpy, seaborn, maptplotlib, category_encoders, collections, nltk, and sklearn
